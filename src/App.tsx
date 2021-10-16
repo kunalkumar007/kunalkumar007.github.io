@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import About from "./components/About";
 import { HeaderMenu, HomeHeader } from "./components/Header";
 import "./styles/app.css";
