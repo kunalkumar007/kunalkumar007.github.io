@@ -47,6 +47,9 @@
   position: relative;
   margin-top: 12vh;
 }
+.headerMenu a {
+  color: black;
+}
 .headerMenu::before {
   content: "";
   position: absolute;
@@ -328,6 +331,7 @@
   border-width: 1px;
   border-color: #c69e91 #c69e91 #eee7e1;
   color: #eee7e1;
+  text-transform: capitalize;
 }
 .contactContainer a:hover {
   text-decoration: line-through;

@@ -12,11 +12,14 @@ export default function Contact(props: contactProps) {
       <div className="infoContainer">
         <p>Just keeping this Simple.</p>
         <p>
-          Email: <a href="/">kunalinbox83@gmail.com</a>
+          Email:{" "}
+          <a href="mailto:kunalinbox83@gmail.com">kunalinbox83@gmail.com</a>
         </p>
         <p>
-          On the Internet :<a href="/">Linkedin</a> / <a href="/">Linkedin</a> /
-          <a href="/">Linkedin</a>
+          On the Internet :
+          <a href="https://www.linkedin.com/in/kunalkumar007/">Linkedin</a> /{" "}
+          <a href="https://www.github.com/kunalkumar007/">Github</a> /{" "}
+          <a href="https://www.instagram.com/kunal.developer/">Instagram</a>
         </p>
       </div>
     </div>
