@@ -6,12 +6,14 @@ import Home from "./components/Home";
 import gsap from "gsap";
 import { Power4, Power1 } from "gsap/all";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
 
 function App() {
   const containerRef = useRef(null);
   let loadingRef = useRef(null);
   let loadingDuration = 2;
   const query = gsap.utils.selector(containerRef);
+  const [bgColor, setbgColor] = useState("#EEE7E1");
   const [screen, setScreen] = useState("home");
   const routeHandler = (name: string) => setScreen(name);
   useEffect(() => {
@@ -26,11 +28,23 @@ function App() {
       yPercent: 10,
       ease: Power4.easeInOut,
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    if (screen === "contact") {
+      setbgColor("#1A1919");
+    } else {
+      setbgColor("#EEE7E1");
+    }
+  }, [screen]);
   return (
     <>
       <div className="loadingScreen" ref={loadingRef}></div>
-      <div className="appContainer" ref={containerRef}>
+      <div
+        className="appContainer"
+        ref={containerRef}
+        style={{ backgroundColor: bgColor }}
+      >
         {screen === "home" && (
           <>
             <HomeHeader />
@@ -40,7 +54,7 @@ function App() {
         {screen === "about" && (
           <>
             <HeaderMenu route={routeHandler} screen={screen} />
-            <About />
+            <About route={routeHandler} />
           </>
         )}
         {screen === "work" && (
@@ -52,7 +66,7 @@ function App() {
         {screen === "contact" && (
           <>
             <HeaderMenu route={routeHandler} screen={screen} />
-            <Work route={routeHandler} screen={screen} />
+            <Contact route={routeHandler} screen={screen} />
           </>
         )}
       </div>

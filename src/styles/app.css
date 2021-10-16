@@ -29,6 +29,7 @@
   width: fit-content;
   height: 100%;
   padding: 0 2rem;
+  z-index: 1;
 }
 
 .headerMenu {
@@ -286,4 +287,43 @@
   padding-right: 100px;
   padding-left: 100px;
   text-decoration: none;
+}
+
+.contactContainer {
+  position: fixed;
+  height: 100vh;
+  width: 25%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #eee7e1;
+}
+
+.contactContainer h1 {
+  font-family: "Grandslang roman", sans-serif;
+  font-size: 17vw;
+  line-height: 1em;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+.contactContainer a {
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #c69e91 #c69e91 #eee7e1;
+  color: #eee7e1;
+}
+.contactContainer a:hover {
+  text-decoration: line-through;
+  border-bottom-style: none;
+  outline: 0;
+}
+.imageIcon {
+  width: 2rem;
+  height: 2rem;
+}
+.boldText {
+  font-weight: 600;
 }
