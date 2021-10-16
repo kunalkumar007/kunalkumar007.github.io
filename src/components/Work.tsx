@@ -1,3 +1,5 @@
+import { animate } from "../utils";
+
 interface workProps {
   route: (name: string) => void;
   screen: string;
@@ -8,12 +10,12 @@ export default function Work(props: workProps) {
     <div className="mainContainer">
       <div className="infoContainer">
         <h1>WORK</h1>
-        <p>
+        <p className={animate("slideInUp", 0)}>
           This is a showcase of my best work in a variety of fields, from
           Graphic and Web Design to Web Design and Development.
         </p>
         <br />
-        <p>
+        <p className={animate("slideInUp", 0)}>
           From Web Components and UI/UX animations to React.JS, Redux, Firebase,
           and Node.JS. Check out my latest web software development portfolio
           projects.

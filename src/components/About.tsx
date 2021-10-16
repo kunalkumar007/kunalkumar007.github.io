@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "../assets/pic.jpeg";
 import HacktoberfestLogo from "../assets/hacktoberfest_logo.svg";
+import { animate } from "../utils";
 
 interface aboutProps {
   route: (name: string) => void;
@@ -8,9 +9,9 @@ interface aboutProps {
 
 export default function About(props: aboutProps) {
   return (
-    <div style={{ display: "flex" }}>
+    <div className="aboutMainContainerDiv">
       <div className="aboutMainContainer">
-        <h1>About</h1>
+        <h1 className={animate("slideInUp", 0)}>About</h1>
         <span className="quote">
           I'm Kunal. A Full Stack React Developer from India.
         </span>
@@ -89,7 +90,7 @@ export default function About(props: aboutProps) {
           Contact Me
         </button>
       </div>
-      <img src={pic} alt="" className="profileImg" />
+      <img src={pic} alt="" className={`profileImg ${animate("zoomIn", 1)}`} />
     </div>
   );
 }

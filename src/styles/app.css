@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap");
 @import url("https://db.onlinewebfonts.com/c/0fddb08144cea533dcd3d39388b7ffbe?family=GrandSlang+Roman");
+
 .appContainer {
   /* border: 2px solid red; */
   height: 100vh;
@@ -17,6 +18,9 @@
   height: 100%;
   width: 100%;
   background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* 
  * --------------------
@@ -213,6 +217,10 @@
   cursor: pointer;
   text-decoration: line-through;
 }
+.aboutMainContainerDiv {
+  display: flex;
+}
+
 .aboutMainContainer {
   /* border: 2px solid chocolate; */
   padding-top: 10%;
@@ -326,4 +334,79 @@
 }
 .boldText {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 479px) {
+  .appContainer {
+    flex-direction: column;
+  }
+  .headerMenu::before {
+    transform: rotate(0);
+    /* right: -50%; */
+    bottom: 50%;
+    top: 60%;
+    left: 100%;
+    width: 50px;
+  }
+  .headerMenuContainer {
+    height: auto;
+  }
+  .headerMenuContainer h4 {
+    transform: none;
+  }
+  .headerMenu {
+    display: flex;
+    margin-top: 0;
+  }
+  .logo {
+    visibility: hidden;
+    display: none;
+  }
+  .mainContainer {
+    flex-wrap: wrap;
+    height: 50%;
+  }
+  .infoContainer {
+    width: 90%;
+    margin-top: 12%;
+  }
+  .navigationContainer h1 {
+    font-size: 16vw;
+    line-height: 1em;
+    padding-bottom: 5%;
+  }
+  .navigationContainer h2 {
+    visibility: hidden;
+    display: none;
+  }
+  .aboutMenu {
+    margin-top: 0%;
+  }
+  .aboutMenu::before {
+    transform: translateX(50%) rotate(0);
+    top: 60%;
+    bottom: 50%;
+  }
+  .contactContainer {
+    width: 100%;
+  }
+  .profileImg {
+    position: static;
+    width: 50%;
+    padding-top: 10%;
+  }
+  .aboutMainContainer {
+    /* padding-top: 15%; */
+  }
+  .aboutMainContainerDiv {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .quote {
+    max-width: 98%;
+    font-size: 2.4rem;
+  }
+  .description-long {
+    max-width: 99%;
+  }
 }

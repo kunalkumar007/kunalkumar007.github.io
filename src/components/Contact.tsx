@@ -1,3 +1,4 @@
+import { animate } from "../utils";
 
 interface contactProps {
   route: (name: string) => void;
@@ -7,7 +8,7 @@ interface contactProps {
 export default function Contact(props: contactProps) {
   return (
     <div className="contactContainer">
-      <h1>Hello.</h1>
+      <h1 className={animate("fadeInUp", 0)}>Hello.</h1>
       <div className="infoContainer">
         <p>Just keeping this Simple.</p>
         <p>
