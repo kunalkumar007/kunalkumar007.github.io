@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ecfa5f6.chunk.css",
+    "main.css": "/static/css/main.995969e9.chunk.css",
     "main.js": "/static/js/main.5d45890c.chunk.js",
     "main.js.map": "/static/js/main.5d45890c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.406dd86f.js",
@@ -8,8 +8,9 @@
     "static/js/2.34425a89.chunk.js": "/static/js/2.34425a89.chunk.js",
     "static/js/2.34425a89.chunk.js.map": "/static/js/2.34425a89.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6ecfa5f6.chunk.css.map": "/static/css/main.6ecfa5f6.chunk.css.map",
+    "static/css/main.995969e9.chunk.css.map": "/static/css/main.995969e9.chunk.css.map",
     "static/js/2.34425a89.chunk.js.LICENSE.txt": "/static/js/2.34425a89.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/static/media/GrandSlang Roman.dca5fea6.woff2",
     "static/media/hacktoberfest_logo.bff36728.svg": "/static/media/hacktoberfest_logo.bff36728.svg",
     "static/media/loading1.0b8953ba.gif": "/static/media/loading1.0b8953ba.gif",
     "static/media/pic.872d6546.jpeg": "/static/media/pic.872d6546.jpeg"
@@ -17,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.406dd86f.js",
     "static/js/2.34425a89.chunk.js",
-    "static/css/main.6ecfa5f6.chunk.css",
+    "static/css/main.995969e9.chunk.css",
     "static/js/main.5d45890c.chunk.js"
   ]
 }
